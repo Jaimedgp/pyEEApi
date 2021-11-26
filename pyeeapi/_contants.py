@@ -1,0 +1,111 @@
+time_coverage = ["Year", "Last7days"]
+output = ["HTML", "TEXT"]
+source = ["E1a", "E2a", "All"]
+
+pollutants = {'(CH3)2-CH-CH2-CH2-CH3': 316,
+            '(CH3)3-C-CH2-CH-(CH3)2': 449,
+            '1,2,3-C6H3(CH3)3': 6012,
+            '1,2,4-C6H3(CH3)3': 6011,
+            '1,3,5-C6H3(CH3)3': 6013,
+            'Acenaphthene': 351,
+            'Acenaphtylene': 352,
+            'Anthracene': 608,
+            'As': 7018,
+            'As in PM10': 5018,
+            'BaP': 7029,
+            'BaP in PM10': 5029,
+            'Benzo(a)anthracene': 611,
+            'Benzo(a)anthracene in PM10': 5610,
+            'Benzo(b)fluoranthene in PM10': 5617,
+            'Benzo(b,j)fluorantheneinPM10': 5480,
+            'Benzo(b+j)fluoranthene': 7480,
+            'Benzo(ghi)perylene': 624,
+            'Benzo(ghi)perylene in PM10': 5623,
+            'Benzo(j)fluoranthene in PM10': 5759,
+            'Benzo(k)fluoranthene': 627,
+            'Benzo(k)fluoranthene in PM10': 5626,
+            'C2H6': 428,
+            'C6H14': 443,
+            'C6H4-(CH3)2': 78,
+            'C6H5-C2H5': 431,
+            'C6H5-CH3': 21,
+            'C6H6': 20,
+            'C7H16': 441,
+            'C8H18': 475,
+            'Ca2+ in PM2.5': 1629,
+            'Cd': 7014,
+            'Cd in PM10': 5014,
+            'CH2=CH-C(CH3)=CH2': 451,
+            'CH2=CH-CH=CH2': 24,
+            'CH2=CH-CH3': 505,
+            'Chrysene': 4406,
+            'cis-H3C-CH=CH-CH3': 6007,
+            'Cl- in PM2.5': 1631,
+            'CO': 10,
+            'Cr': 7016,
+            'Cu': 7073,
+            'Dibenzo(ah)anthracene': 7419,
+            'Dibenzo(ah)anthracene in PM10': 5419,
+            'EC in PM2.5': 1771,
+            'Fluoranthene': 645,
+            'Fluorene': 435,
+            'H2C=CH2': 430,
+            'H2C=CH-CH2-CH2-CH3': 6008,
+            'H2C=CH-CH2-CH3': 6005,
+            'H3C-(CH2)3-CH3': 486,
+            'H3C-CH(CH3)2': 447,
+            'H3C-CH2-CH(CH3)2': 450,
+            'H3C-CH2-CH2-CH3': 394,
+            'H3C-CH2-CH3': 503,
+            'H3C-HC=CH-CH2-CH3': 6009,
+            'HC=CH': 432,
+            'HCHO': 25,
+            'Hg': 7013,
+            'Hg0 + Hg-reactive': 4813,
+            'Indeno-(1,2,3-cd)pyrene': 656,
+            'Indeno-(1,2,3-cd)pyrene in PM': 5655,
+            'K+ in PM2.5': 1657,
+            'm,p-C6H4(CH3)2': 464,
+            'm-C6H4-(CH3)2': 81,
+            'Mg2+ in PM2.5': 1659,
+            'Na+  in PM2.5': 1668,
+            'Naphtalene': 465,
+            'NH4+ in PM2.5': 1045,
+            'Ni': 7015,
+            'Ni in PM10': 5015,
+            'NO': 38,
+            'NO2': 8,
+            'NO3- in PM2.5': 1046,
+            'NOX as NO2': 9,
+            'O3': 7,
+            'OC in PM2.5': 1772,
+            'o-C6H4-(CH3)2': 482,
+            'Pb': 7012,
+            'Pb in PM10': 5012,
+            'Phenanthrene': 714,
+            'PM10': 5,
+            'Zn': 7063,
+            'PM2.5': 6001,
+            'Pyrene': 717,
+            'SO2': 1,
+            'SO42- in PM2.5': 1047,
+            'THC (NM)': 32,
+            'trans-H3C-CH=CH-CH3': 6006,
+            'trans-H3C-HC=CH-CH2-CH3': 82,
+            'T-VOC': 33
+            }
+
+url = ("https://fme.discomap.eea.europa.eu/fmedatastreaming/" +
+       "AirQualityDownload/AQData_Extract.fmw?" +
+       "CountryCode={country_code}" +
+       "&CityName={city_name}" +
+       "&Pollutant={pollutant}" +
+       "&Year_from={year_from}" +
+       "&Year_to={year_to}" +
+       "&Station={station}" +
+       "&EoICode={eoi_code}" +
+       "&Samplingpoint={sampling_point}" +
+       "&Source={source}" +
+       "&Output={output}" +
+       "&UpdateDate={update_date}" +
+       "&TimeCoverage={time_coverage}")
